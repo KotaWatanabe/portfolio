@@ -16,10 +16,16 @@
   height:100%;
 }
 
+.projects-grid{
+  display: flex;
+}
+
 .profile-header h1{
-  /* font-family: 'Bangers', cursive; */
   font-family: 'Carter One', cursive;
-  /* font-family: 'Lusitana', serif;  */
+  /* font-family: 'Bevan', cursive; */
+  /* font-family: 'Notable', sans-serif; */
+  /* font-family: 'Chonburi', cursive; */
+  
   font-size: 80px;
   margin-top: 1em;
   color:white;
@@ -40,9 +46,9 @@
 }
 
 .banner-text h1 {
-  font-size:66px;
+  font-size:55px;
   font-weight: bold;
-  color: white;
+  color: white;  
 }
 
 .banner-text hr {
@@ -55,6 +61,7 @@
   color: white;
   font-size: 20px;
   padding: 1em;
+  
 }
 
 .social-links {
