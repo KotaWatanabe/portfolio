@@ -20,6 +20,12 @@
   display: flex;
 }
 
+/* resume page */
+.resume-right-col {
+  background: #27331f;
+  color:white;
+}
+
 /* contact page */
 .contact-body {
   margin:auto;
