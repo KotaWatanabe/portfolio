@@ -18,7 +18,7 @@ class Landing extends Component {
 
                 <hr/>
 
-                <p>HTML/CSS | Ruby on Rails | JavaScript | React | React Native | NodeJS | Express | PostgreSQL</p>
+                <p>HTML/CSS | Ruby on Rails | JavaScript | React | Redux | NodeJS | Express | PostgreSQL</p>
 
                 <div className="social-links">
                   <a href="https://www.linkedin.com/in/kota-watanabe/" target="_blank" rel="noopener noreferrer">
