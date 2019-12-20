@@ -4,26 +4,41 @@
   background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* landing page */
 .landing-grid {
   background: #00416A;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align:center;
-  position: fixed;
+  /* position: fixed; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
   height:100%;
 }
 
-.projects-grid{
+.social-links {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
 }
 
-/* resume page */
-.resume-right-col {
-  background: #27331f;
-  color:white;
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+
+/* projects page */
+
+.projects-card{
+  display: flex;
+  width: 100%;
+  flex-direction:column;
 }
 
 /* contact page */
@@ -62,26 +77,17 @@
 }
 
 .contact-list i {
-  font-size: 60px;
-  padding-right: 5rem;
+  font-size: 20px;
+  padding-right: 2rem;
 }
 
 .profile-header h1{
   font-family: 'Carter One', cursive;
-  /* font-family: 'Bevan', cursive; */
-  /* font-family: 'Notable', sans-serif; */
-  /* font-family: 'Chonburi', cursive; */
   
   font-size: 80px;
   margin-top: 1em;
   color:white;
 }
-
-/* .profile-image {
-  height: 250px;
-  margin-top: 5em;
-  border-radius: 5em;
-} */
 
 .banner-text {
   background-color: black;
@@ -107,18 +113,27 @@
   color: white;
   font-size: 20px;
   padding: 1em;
-  
 }
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-}
+/* dest top */
 
-.social-links i {
-  color: white;
-  font-size: 5em;
-  padding: 8px;
+@media (min-width: 600px) {
+
+  .landing-grid {
+    position: fixed;
+  }
+
+  .projects-grid{
+    display: flex;
+  }
+
+  .social-links {
+    width: 50%;
+  }
+
+  .contact-list i {
+    font-size: 60px;
+    padding-right: 5rem;
+  }
+
 }

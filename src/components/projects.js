@@ -15,7 +15,7 @@ class Projects extends Component {
         if(this.state.activeTab === 0){
             return(
                 <div className="projects-grid">
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                   <CardTitle style={{color: 'fff', height: '176px', background: `url(${coffee}) center / cover `}}></CardTitle>
                    <CardText>
                       Coffee and Speak is matching web service for language teachers and students. <br/> Main programing languages are Ruby on Rails, JavaScript, HTML/CSS,PostgreSQL. <hr/>
@@ -43,7 +43,7 @@ class Projects extends Component {
                     </CardMenu>
                   </Card>
                 
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                   <CardTitle style={{color: 'fff', height: '176px', background: `url(${quiz}) center / cover `}}></CardTitle>
                    <CardText>
                    Quiz Off is an interactive quiz making and taking platform.
@@ -65,7 +65,7 @@ class Projects extends Component {
         } else if(this.state.activeTab === 1){
             return (
               <div className="projects-grid">
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: 'fff', height: '176px', background: `url(${footballfetch}) center / cover `}}></CardTitle>
                 <CardText>
                   Football-fetch is app for football enthusiast(like me) to check the updated standings of major European Football leagues. <br/>
@@ -85,7 +85,7 @@ class Projects extends Component {
                 </CardMenu>
               </Card>
 
-              <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+              <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: 'fff', height: '176px', background: `url(${portfolio}) center / cover `}}></CardTitle>
                 <CardText>
                   This portfolio is made with React. <br/>
