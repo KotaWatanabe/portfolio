@@ -3,7 +3,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, 
 import coffee from '../image/coffee_and_speak.png'
 import quiz from '../image/quiz-off.png'
 import portfolio from '../image/portfolio.png'
-import footballfetch from '../image/footballfetch.png'
+import footballfetch from '../image/football-fetch.png'
 
 class Projects extends Component {
 
@@ -68,7 +68,7 @@ class Projects extends Component {
                 <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: 'fff', height: '176px', background: `url(${footballfetch}) center / cover `}}></CardTitle>
                 <CardText>
-                  Football-fetch is app for football enthusiast(like me) to check the updated standings of major European Football leagues. <br/>
+                  Football-fetch is app for the football enthusiast(like me) to check the updated standings of major European Football leagues. <br/>
                   This app is made with React and using football-data.org API.
                 </CardText>
                 <CardActions border>
