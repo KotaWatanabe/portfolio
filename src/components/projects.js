@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 import coffee from '../image/coffee_and_speak.png'
 import quiz from '../image/quiz-off.png'
-import portfolio from '../image/portfolio.png'
+import celebrityRecognition from '../image/celebrity-recognition.png'
 import footballfetch from '../image/football-fetch.png'
 
 class Projects extends Component {
@@ -38,9 +38,7 @@ class Projects extends Component {
                     </a>
                     </CardActions> 
                     
-                    <CardMenu style={{color: 'fff'}}>
-                      <IconButton name="share" />
-                    </CardMenu>
+
                   </Card>
                 
                 <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
@@ -55,10 +53,6 @@ class Projects extends Component {
                     <Button colored>GitHub</Button>
                   </a>
                   </CardActions> 
-                  
-                  <CardMenu style={{color: 'fff'}}>
-                    <IconButton name="share" />
-                  </CardMenu>
                 </Card>
                 </div>
             )
@@ -66,46 +60,41 @@ class Projects extends Component {
             return (
               <div className="projects-grid">
                 <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                <CardTitle style={{color: 'fff', height: '176px', background: `url(${footballfetch}) center / cover `}}></CardTitle>
-                <CardText>
-                  Football-fetch is app for the football enthusiast(like me) to check the updated standings of major European Football leagues. <br/>
-                  This app is made with React and using football-data.org API.
-                </CardText>
-                <CardActions border>
-                <a href="https://github.com/KotaWatanabe/fetch-foot" target="_blank" rel="noopener noreferrer">
-                  <Button colored>GitHub</Button>
-                </a>
-                <a href="https://football-fetch.netlify.com"   target="_blank" rel="noopener noreferrer">
+                  <CardTitle style={{color: 'fff', height: '176px', background: `url(${celebrityRecognition}) center / cover `}}></CardTitle>
+                    <CardText>
+                      Celebrity-recognition is an app to find the possible name of celebrity from the picture. <br/>
+                      To recognize the celebrity name from picture, I used Clarifai api.
+                      This app is made with <strong>React</strong> for front-end, <strong>Node.js(express, knex)</strong> for back-end and <strong>PostgreSQL</strong> for database.
+                      It's live on Heroku.
+                    </CardText>
+                    <CardActions border>
+                      <a href="https://github.com/KotaWatanabe/Celebrity-Recognition" target="_blank" rel="noopener noreferrer">
+                        <Button colored>GitHub</Button>
+                      </a>
+                      <a href="https://celebrity-recognition.herokuapp.com/"   target="_blank" rel="noopener noreferrer">
+                        <Button colored>LiveDemo</Button>
+                      </a>
+                    </CardActions> 
+                </Card>
+                <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                  <CardTitle style={{color: 'fff', height: '176px', background: `url(${footballfetch}) center / cover `}}></CardTitle>
+                  <CardText>
+                    Football-fetch is app for the football enthusiast(like me) to check the updated standings of major European Football leagues. <br/>
+                    This app is made with React and using football-data.org API.
+                  </CardText>
+                  <CardActions border>
+                    <a href="https://github.com/KotaWatanabe/fetch-foot" target="_blank" rel="noopener noreferrer">
+                    <Button colored>GitHub</Button>
+                    </a>
+                    <a href="https://football-fetch.netlify.com"   target="_blank" rel="noopener noreferrer">
                       <Button colored>LiveDemo</Button>
                     </a>
-                </CardActions> 
-                
-                <CardMenu style={{color: 'fff'}}>
-                  <IconButton name="share" />
-                </CardMenu>
-              </Card>
-
-              <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                <CardTitle style={{color: 'fff', height: '176px', background: `url(${portfolio}) center / cover `}}></CardTitle>
-                <CardText>
-                  This portfolio is made with React. <br/>
-                  I designed this website with React-MDL. <br/>
-                </CardText>
-                <CardActions border>
-                <a href="https://github.com/KotaWatanabe/portfolio" target="_blank" rel="noopener noreferrer">
-                  <Button colored>GitHub</Button>
-                </a>
-                </CardActions> 
-                
-                <CardMenu style={{color: 'fff'}}>
-                  <IconButton name="share" />
-                </CardMenu>
-              </Card>
+                  </CardActions> 
+                </Card>
             </div> 
             )
         }
     }
-    
     
     render() {
         return(
