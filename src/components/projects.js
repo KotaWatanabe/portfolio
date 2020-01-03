@@ -16,7 +16,7 @@ class Projects extends Component {
             return(
                 <div className="projects-grid">
                 <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                  <CardTitle style={{color: 'fff', height: '176px', background: `url(${coffee}) center / cover `}}></CardTitle>
+                  <CardTitle style={{color: 'fff', height: '30vh', background: `url(${coffee}) center / cover `}}></CardTitle>
                    <CardText>
                       Coffee and Speak is matching web service for language teachers and students. <br/> Main programing languages are Ruby on Rails, JavaScript, HTML/CSS,PostgreSQL. <hr/>
                       3 cool features. <br/>
@@ -42,7 +42,7 @@ class Projects extends Component {
                   </Card>
                 
                 <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                  <CardTitle style={{color: 'fff', height: '176px', background: `url(${quiz}) center / cover `}}></CardTitle>
+                  <CardTitle style={{color: 'fff', height: '30vh', background: `url(${quiz}) center / cover `}}></CardTitle>
                    <CardText>
                    Quiz Off is an interactive quiz making and taking platform.
                    Main programing languages are Ruby on Rails, JavaScript, HTML/CSS,PostgreSQL
@@ -60,7 +60,7 @@ class Projects extends Component {
             return (
               <div className="projects-grid">
                 <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                  <CardTitle style={{color: 'fff', height: '176px', background: `url(${celebrityRecognition}) center / cover `}}></CardTitle>
+                  <CardTitle style={{color: 'fff', height: '30vh', background: `url(${celebrityRecognition}) center / cover `}}></CardTitle>
                     <CardText>
                       Celebrity-recognition is an app to find the possible name of celebrity from the picture. <br/>
                       To recognize the celebrity name from picture, I used Clarifai api.
@@ -77,7 +77,7 @@ class Projects extends Component {
                     </CardActions> 
                 </Card>
                 <Card className="projects-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                  <CardTitle style={{color: 'fff', height: '176px', background: `url(${footballfetch}) center / cover `}}></CardTitle>
+                  <CardTitle style={{color: 'fff', height: '30vh', background: `url(${footballfetch}) center / cover `}}></CardTitle>
                   <CardText>
                     Football-fetch is app for the football enthusiast(like me) to check the updated standings of major European Football leagues. <br/>
                     This app is made with React and using football-data.org API.
